@@ -1,0 +1,244 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+/* --- Navbar --- */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar {
+    background-color: rgba(33, 37, 41, 0.8) !important;
+    /* Use !important to override Bootstrap */
+    backdrop-filter: blur(5px);
+    /* Frosted glass effect */
+}
+
+.navbar-solid {
+    background-color: #0d4a4e !important;
+    /* Solid dark teal from screenshot */
+    backdrop-filter: none;
+    /* Remove blur */.hero-section-contact
+}
+/* --- Home Hero Section --- */
+.hero-section-home {
+    /* REPLACE THIS with your own hero image path */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero_bg_3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.hero-section-home h1 {
+    font-weight: 300;
+    font-size: 3.2rem;
+}
+/* --- Hero Search Bar --- */
+.hero-search-bar {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50px;
+    padding: 10px 10px 10px 25px;
+    backdrop-filter: blur(10px);
+}
+.hero-search-bar .form-control {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.hero-search-bar .form-control:focus {
+    box-shadow: none;
+}
+.hero-search-bar .btn {
+    border-radius: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+/* --- Property Card --- */
+.property-card-img {
+    height: 250px;
+    object-fit: cover;
+}
+/* --- Service Icons --- */
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f0f7ff;
+    /* Lighter blue */
+    color: #0d6efd;
+    /* Bootstrap primary color */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+.service-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+/* --- Small Feature Icons (Home) --- */
+.feature-icon-sm {
+    color: #0d6efd;
+    font-size: 1.5rem;
+}
+/* ================================================
+ABOUT PAGE STYLES
+================================================
+*/
+/* --- About Hero Section --- */
+.hero-section {
+    /* REPLACE THIS with your own hero image path */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/random/1920x1080?modern+house+exterior&1') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.hero-section h1 {
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+/* --- Feature Icons (About) --- */
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    /* Light grey background */
+    color: #0d6efd;
+    /* Bootstrap primary color */
+    font-size: 1.75rem;
+    margin-right: 1.5rem;
+}
+/* --- Stats Section --- */
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #212529;
+    /* Dark text color */
+}
+.stats-label {
+    color: #6c757d;
+}
+/* ================================================
+ NEW CONTACT PAGE STYLES
+================================================
+*/
+/* --- Contact Hero Section --- */
+.hero-section-contact {
+    /* REPLACE THIS with your own hero image path */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero_bg_3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.hero-section-contact .breadcrumb-item a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+.hero-section-contact .breadcrumb-item.active {
+    color: #ced4da;
+}
+/* --- Contact Info Icons --- */
+.contact-info-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0d2c4a;
+    /* Dark blue from screenshot */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+}
+/* --- Underline Form Controls --- */
+.form-control-underline {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none !important;
+    transition: border-color 0.15s ease-in-out;
+}
+.form-control-underline:focus {
+    background-color: transparent;
+    border-bottom-width: 2px;
+    border-color: #0d4a4e;
+    /* Dark teal theme color */
+}
+/* --- Solid Button --- */
+.btn-primary-solid {
+    background-color: #0d4a4e;
+    border-color: #0d4a4e;
+    color: #fff;
+}
+.btn-primary-solid:hover {
+    background-color: #0a3a3d;
+    border-color: #0a3a3d;
+    color: #fff;
+}
+/* ================================================
+ SHARED STYLES (Both Pages)
+================================================
+*/
+/* --- Team Section --- */
+.team-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.team-social-icon {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #555;
+    transition: all 0.3s ease;
+}
+.team-social-icon:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+/* --- Footer --- */
+.footer {
+    background-color: #f8f9fa;
+}
+/* NEW FOOTER STYLES
+  - These styles apply to the new footer structure in contact.html
+*/
+.footer-v2 {
+    background-color: #f8f9fa;
+}
+.footer-v2 h6 {
+    font-weight: 700;
+}
+.footer-social-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #6c757d;
+}
